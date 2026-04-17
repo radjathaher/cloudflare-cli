@@ -35,7 +35,7 @@ cargo build --release
 Create a Cloudflare API token with the permissions you need, then export:
 
 ```bash
-export CLOUDFLARE_API_TOKEN="..."
+export CF_API_TOKEN="..."
 ```
 
 Optional overrides:

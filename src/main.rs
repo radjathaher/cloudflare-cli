@@ -30,7 +30,7 @@ fn run() -> Result<()> {
         return handle_api(&tree, matches);
     }
 
-    let token = env::var("CLOUDFLARE_API_TOKEN").context("CLOUDFLARE_API_TOKEN missing")?;
+    let token = cloudflare_api_token()?;
     let endpoint = env::var("CLOUDFLARE_API_URL").unwrap_or_else(|_| tree.endpoint.clone());
 
     let pretty = matches.get_flag("pretty");
@@ -188,6 +188,10 @@ fn build_cli(tree: &CommandTree) -> Command {
     cmd
 }
 
+fn cloudflare_api_token() -> Result<String> {
+    env::var("CF_API_TOKEN").context("CF_API_TOKEN missing")
+}
+
 fn build_param_arg(param: &ParamDef) -> Arg {
     let mut arg = Arg::new(param.flag.clone())
         .long(param.flag.clone())
@@ -273,7 +277,7 @@ fn handle_tree(tree: &CommandTree, matches: &clap::ArgMatches) -> Result<()> {
 }
 
 fn handle_api(tree: &CommandTree, matches: &clap::ArgMatches) -> Result<()> {
-    let token = env::var("CLOUDFLARE_API_TOKEN").context("CLOUDFLARE_API_TOKEN missing")?;
+    let token = cloudflare_api_token()?;
     let endpoint = env::var("CLOUDFLARE_API_URL").unwrap_or_else(|_| tree.endpoint.clone());
 
     let pretty = matches.get_flag("pretty");
