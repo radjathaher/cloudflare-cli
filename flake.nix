@@ -14,7 +14,7 @@
       {
         packages.default = pkgs.rustPlatform.buildRustPackage {
           pname = "cloudflare";
-          version = "0.1.0";
+          version = "0.1.2";
           src = self;
           cargoLock = {
             lockFile = ./Cargo.lock;

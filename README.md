@@ -50,6 +50,8 @@ export CLOUDFLARE_ZONE_ID="..."
 
 ```bash
 cloudflare list --json
+cloudflare list worker --json
+cloudflare list builds latest --json
 cloudflare describe <resource> <op> --json
 cloudflare tree --json
 ```
@@ -61,6 +63,10 @@ cloudflare --help
 cloudflare <resource> --help
 cloudflare <resource> <op> --help
 ```
+
+`list` accepts optional search terms. Terms match resource names, operation names,
+HTTP methods, paths, summaries, and descriptions. JSON output returns matching
+resources with operation metadata so humans and agents can compose the next call.
 
 ## Examples
 
@@ -74,6 +80,22 @@ List zones (example; op names from OpenAPI):
 
 ```bash
 cloudflare api GET /zones --pretty
+```
+
+Find and inspect Workers Builds operations:
+
+```bash
+cloudflare list builds --json
+cloudflare describe builds getlatestbuildsbyscripts
+```
+
+Get latest Builds status for a Worker tag:
+
+```bash
+cloudflare builds getlatestbuildsbyscripts \
+  --account-id <ACCOUNT_ID> \
+  --external-script-ids <WORKER_TAG> \
+  --raw
 ```
 
 Create DNS record (example; op names from OpenAPI):

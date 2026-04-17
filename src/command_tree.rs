@@ -45,3 +45,36 @@ pub fn load_command_tree() -> CommandTree {
     let raw = include_str!("../schemas/command_tree.json");
     serde_json::from_str(raw).expect("invalid command_tree.json")
 }
+
+pub fn extract_path_param_names(path: &str) -> Vec<String> {
+    let mut names = Vec::new();
+    let mut rest = path;
+
+    while let Some(start) = rest.find('{') {
+        let after_start = &rest[start + 1..];
+        let Some(end) = after_start.find('}') else {
+            break;
+        };
+
+        let name = &after_start[..end];
+        if !name.is_empty() && !names.iter().any(|existing| existing == name) {
+            names.push(name.to_string());
+        }
+        rest = &after_start[end + 1..];
+    }
+
+    names
+}
+
+#[cfg(test)]
+mod tests {
+    use super::extract_path_param_names;
+
+    #[test]
+    fn extracts_unique_path_parameters_in_order() {
+        assert_eq!(
+            extract_path_param_names("/accounts/{account_id}/workers/{script_name}/{account_id}"),
+            vec!["account_id", "script_name"]
+        );
+    }
+}

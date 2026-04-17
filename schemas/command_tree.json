@@ -33,6 +33,15 @@
               "description": "The application ID."
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -282,6 +291,24 @@
               "required": false,
               "list": false,
               "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -588,6 +615,15 @@
               "description": "The maximum number of log entries to retrieve."
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -792,6 +828,15 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -943,6 +988,24 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "search",
               "flag": "search",
               "location": "query",
@@ -1082,6 +1145,15 @@
               "required": true,
               "list": false,
               "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -1266,6 +1338,15 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -1337,6 +1418,15 @@
               "required": false,
               "list": false,
               "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -1447,6 +1537,15 @@
               "required": true,
               "list": false,
               "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -1681,6 +1780,15 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -1731,6 +1839,15 @@
               "required": true,
               "list": false,
               "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -1921,6 +2038,15 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -2025,6 +2151,24 @@
               "required": false,
               "list": false,
               "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -2315,6 +2459,15 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
               "name": "per_page",
               "flag": "per-page",
               "location": "query",
@@ -2347,6 +2500,15 @@
               "required": true,
               "list": false,
               "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {
@@ -2481,7 +2643,17 @@
           "path": "/accounts/{account_id}/builds/account/limits",
           "summary": "Get account limits",
           "description": "Retrieve account limits and usage information",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            }
+          ],
           "has_body": false
         }
       ]
@@ -5397,6 +5569,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": false
@@ -5426,6 +5607,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": true
@@ -5455,6 +5645,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": false
@@ -5484,6 +5683,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": true
@@ -5513,6 +5721,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": true
@@ -5542,6 +5759,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "meeting_id",
+              "flag": "meeting-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "ID of the meeting"
             }
           ],
           "has_body": true
@@ -8037,6 +8263,24 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "end_date",
+              "flag": "end-date",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "end date in YYYY-MM-DD format"
+            },
+            {
+              "name": "start_date",
+              "flag": "start-date",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "start date in YYYY-MM-DD format"
             }
           ],
           "has_body": false
@@ -8080,7 +8324,17 @@
           "path": "/zones/{zone_id}/api_gateway/discovery",
           "summary": "Retrieve discovered operations on a zone rendered as OpenAPI schemas",
           "description": "Retrieve the most up to date view of discovered operations, rendered as OpenAPI schemas",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8090,7 +8344,107 @@
           "path": "/zones/{zone_id}/api_gateway/discovery/operations",
           "summary": "Retrieve discovered operations on a zone",
           "description": "Retrieve the most up to date view of discovered operations",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "diff",
+              "flag": "diff",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": null
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "endpoint",
+              "flag": "endpoint",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "host",
+              "flag": "host",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "method",
+              "flag": "method",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "origin",
+              "flag": "origin",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter results to only include discovery results sourced from a particular discovery engine\n  * `ML` - Discovered operations that were sourced using ML API Discovery\n  * `SessionIdentifier` - Discovered operations that were sourced using Session Identifier API Discovery\n"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "state",
+              "flag": "state",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter results to only include discovery results in a particular state. States are as follows\n  * `review` - Discovered operations that are not saved into API Shield Endpoint Management\n  * `saved` - Discovered operations that are already saved into API Shield Endpoint Management\n  * `ignored` - Discovered operations that have been marked as ignored\n"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8100,7 +8454,17 @@
           "path": "/zones/{zone_id}/api_gateway/discovery/operations",
           "summary": "Patch discovered operations",
           "description": "Update the `state` on one or more discovered operations",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8110,7 +8474,26 @@
           "path": "/zones/{zone_id}/api_gateway/discovery/operations/{operation_id}",
           "summary": "Patch discovered operation",
           "description": "Update the `state` on a discovered operation",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the discovered operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         }
       ]
@@ -8355,12 +8738,84 @@
           "description": null,
           "parameters": [
             {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "endpoint",
+              "flag": "endpoint",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "feature",
+              "flag": "feature",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning."
+            },
+            {
+              "name": "host",
+              "flag": "host",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "method",
+              "flag": "method",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
               "name": "order",
               "flag": "order",
               "location": "query",
               "required": false,
               "list": false,
               "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
               "description": null
             }
           ],
@@ -8373,7 +8828,17 @@
           "path": "/zones/{zone_id}/api_gateway/operations",
           "summary": "Add operations to a zone",
           "description": "Add one or more operations to a zone. Endpoints can contain path variables. Host, method, endpoint will be normalized to a canoncial form when creating an operation and must be unique on the zone. Inserting an operation that matches an existing one will return the record of the already existing operation and update its last_updated date.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8383,7 +8848,17 @@
           "path": "/zones/{zone_id}/api_gateway/operations",
           "summary": "Delete multiple operations",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8393,7 +8868,35 @@
           "path": "/zones/{zone_id}/api_gateway/operations/{operation_id}",
           "summary": "Retrieve information about an operation",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "feature",
+              "flag": "feature",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning."
+            },
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8403,7 +8906,26 @@
           "path": "/zones/{zone_id}/api_gateway/operations/{operation_id}",
           "summary": "Delete an operation",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8413,7 +8935,17 @@
           "path": "/zones/{zone_id}/api_gateway/operations/item",
           "summary": "Add one operation to a zone",
           "description": "Add one operation to a zone. Endpoints can contain path variables. Host, method, endpoint will be normalized to a canoncial form when creating an operation and must be unique on the zone. Inserting an operation that matches an existing one will return the record of the already existing operation and update its last_updated date.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8425,12 +8957,30 @@
           "description": null,
           "parameters": [
             {
+              "name": "feature",
+              "flag": "feature",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning."
+            },
+            {
               "name": "host",
               "flag": "host",
               "location": "query",
               "required": false,
               "list": true,
               "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
               "description": null
             }
           ],
@@ -8449,7 +8999,26 @@
           "path": "/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation",
           "summary": "Retrieve operation-level schema validation settings",
           "description": "Retrieves operation-level schema validation settings on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8459,7 +9028,26 @@
           "path": "/zones/{zone_id}/api_gateway/operations/{operation_id}/schema_validation",
           "summary": "Update operation-level schema validation settings",
           "description": "Updates operation-level schema validation settings on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8469,7 +9057,17 @@
           "path": "/zones/{zone_id}/api_gateway/operations/schema_validation",
           "summary": "Update multiple operation-level schema validation settings",
           "description": "Updates multiple operation-level schema validation settings on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8479,7 +9077,17 @@
           "path": "/zones/{zone_id}/api_gateway/settings/schema_validation",
           "summary": "Retrieve zone level schema validation settings",
           "description": "Retrieves zone level schema validation settings currently set on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8489,7 +9097,17 @@
           "path": "/zones/{zone_id}/api_gateway/settings/schema_validation",
           "summary": "Update zone level schema validation settings",
           "description": "Updates zone level schema validation settings on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8499,7 +9117,17 @@
           "path": "/zones/{zone_id}/api_gateway/settings/schema_validation",
           "summary": "Update zone level schema validation settings",
           "description": "Updates zone level schema validation settings on the zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8511,10 +9139,46 @@
           "description": null,
           "parameters": [
             {
+              "name": "omit_source",
+              "flag": "omit-source",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Omit the source-files of schemas and only retrieve their meta-data."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
               "name": "validation_enabled",
               "flag": "validation-enabled",
               "location": "query",
               "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
               "list": false,
               "schema_type": null,
               "description": null
@@ -8529,7 +9193,17 @@
           "path": "/zones/{zone_id}/api_gateway/user_schemas",
           "summary": "Upload a schema to a zone",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8539,7 +9213,35 @@
           "path": "/zones/{zone_id}/api_gateway/user_schemas/{schema_id}",
           "summary": "Retrieve information about a specific schema on a zone",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "omit_source",
+              "flag": "omit-source",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Omit the source-files of schemas and only retrieve their meta-data."
+            },
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Identifier for the schema-ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8549,7 +9251,26 @@
           "path": "/zones/{zone_id}/api_gateway/user_schemas/{schema_id}",
           "summary": "Enable validation for a schema",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Identifier for the schema-ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -8559,7 +9280,26 @@
           "path": "/zones/{zone_id}/api_gateway/user_schemas/{schema_id}",
           "summary": "Delete a schema",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Identifier for the schema-ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -8571,6 +9311,42 @@
           "description": "Retrieves all operations from the schema. Operations that already exist in API Shield Endpoint Management will be returned as full operations.",
           "parameters": [
             {
+              "name": "endpoint",
+              "flag": "endpoint",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "feature",
+              "flag": "feature",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning."
+            },
+            {
+              "name": "host",
+              "flag": "host",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "method",
+              "flag": "method",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
               "name": "operation_status",
               "flag": "operation-status",
               "location": "query",
@@ -8578,6 +9354,42 @@
               "list": false,
               "schema_type": "string",
               "description": "Filter results by whether operations exist in API Shield Endpoint Management or not. `new` will just return operations from the schema that do not exist in API Shield Endpoint Management. `existing` will just return operations from the schema that already exist in API Shield Endpoint Management."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Identifier for the schema-ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": false
@@ -8589,7 +9401,35 @@
           "path": "/zones/{zone_id}/api_gateway/user_schemas/hosts",
           "summary": "Retrieve schema hosts in a zone",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         }
       ]
@@ -8614,6 +9454,15 @@
               "list": false,
               "schema_type": "boolean",
               "description": "Ensures that the configuration is written or retrieved in normalized fashion"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": false
@@ -8634,6 +9483,15 @@
               "list": false,
               "schema_type": "boolean",
               "description": "Ensures that the configuration is written or retrieved in normalized fashion"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": true
@@ -8651,7 +9509,17 @@
           "path": "/zones/{zone_id}/api_gateway/expression-template/fallthrough",
           "summary": "Generate fallthrough WAF expression template from a set of API hosts",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         }
       ]
@@ -11053,7 +11921,35 @@
           "path": "/accounts/{account_id}/builds/tokens",
           "summary": "List build tokens",
           "description": "Get all build tokens with pagination",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number for pagination"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of items per page"
+            }
+          ],
           "has_body": false
         },
         {
@@ -11063,7 +11959,17 @@
           "path": "/accounts/{account_id}/builds/tokens",
           "summary": "Create build token",
           "description": "Create a new build authentication token",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            }
+          ],
           "has_body": true
         },
         {
@@ -11074,6 +11980,15 @@
           "summary": "Delete build token",
           "description": "Remove a build authentication token",
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
             {
               "name": "build_token_uuid",
               "flag": "build-token-uuid",
@@ -11101,6 +12016,15 @@
           "description": "Retrieve builds for specific version IDs",
           "parameters": [
             {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
               "name": "version_ids",
               "flag": "version-ids",
               "location": "query",
@@ -11119,7 +12043,26 @@
           "path": "/accounts/{account_id}/builds/builds/{build_uuid}",
           "summary": "Get build by UUID",
           "description": "Retrieve detailed information about a specific build",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "build_uuid",
+              "flag": "build-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Build UUID"
+            }
+          ],
           "has_body": false
         },
         {
@@ -11129,7 +12072,26 @@
           "path": "/accounts/{account_id}/builds/builds/{build_uuid}/cancel",
           "summary": "Cancel build",
           "description": "Cancel a running or queued build",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "build_uuid",
+              "flag": "build-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Build UUID"
+            }
+          ],
           "has_body": false
         },
         {
@@ -11140,6 +12102,24 @@
           "summary": "Get build logs",
           "description": "Retrieve logs for a specific build with cursor-based pagination",
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "build_uuid",
+              "flag": "build-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Build UUID"
+            },
             {
               "name": "cursor",
               "flag": "cursor",
@@ -11160,6 +12140,15 @@
           "summary": "Get latest builds by script IDs",
           "description": "Retrieve the most recent builds for multiple worker scripts",
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
             {
               "name": "external_script_ids",
               "flag": "external-script-ids",
@@ -14149,6 +15138,15 @@
           "summary": "List containers.",
           "description": "Lists all the container applications that are associated with your account.",
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier."
+            },
             {
               "name": "image",
               "flag": "image",
@@ -20160,7 +21158,17 @@
           "path": "/accounts/{account_id}/addressing/regional_hostnames/regions",
           "summary": "List Regions",
           "description": "List all Regional Services regions available for use by this account.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -20170,7 +21178,17 @@
           "path": "/zones/{zone_id}/addressing/regional_hostnames",
           "summary": "List Regional Hostnames",
           "description": "List all Regional Hostnames within a zone.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -20180,7 +21198,17 @@
           "path": "/zones/{zone_id}/addressing/regional_hostnames",
           "summary": "Create Regional Hostname",
           "description": "Create a new Regional Hostname entry. Cloudflare will only use data centers that are physically located within the chosen region to decrypt and service HTTPS traffic. Learn more about [Regional Services](https://developers.cloudflare.com/data-localization/regional-services/get-started/).",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -20190,7 +21218,26 @@
           "path": "/zones/{zone_id}/addressing/regional_hostnames/{hostname}",
           "summary": "Fetch Regional Hostname",
           "description": "Fetch the configuration for a specific Regional Hostname, within a zone.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "hostname",
+              "flag": "hostname",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -20200,7 +21247,26 @@
           "path": "/zones/{zone_id}/addressing/regional_hostnames/{hostname}",
           "summary": "Update Regional Hostname",
           "description": "Update the configuration for a specific Regional Hostname. Only the region_key of a hostname is mutable.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "hostname",
+              "flag": "hostname",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -20210,7 +21276,26 @@
           "path": "/zones/{zone_id}/addressing/regional_hostnames/{hostname}",
           "summary": "Delete Regional Hostname",
           "description": "Delete the region configuration for a specific Regional Hostname.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "hostname",
+              "flag": "hostname",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         }
       ]
@@ -26070,7 +27155,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}/environment_variables",
           "summary": "List environment variables",
           "description": "Get all environment variables for a trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": false
         },
         {
@@ -26080,7 +27184,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}/environment_variables",
           "summary": "Upsert environment variables",
           "description": "Create or update environment variables for a trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": true
         },
         {
@@ -26092,6 +27215,15 @@
           "description": "Remove a specific environment variable from a trigger",
           "parameters": [
             {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
               "name": "environment_variable_key",
               "flag": "environment-variable-key",
               "location": "path",
@@ -26099,6 +27231,15 @@
               "list": false,
               "schema_type": "string",
               "description": "Environment variable key"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
             }
           ],
           "has_body": false
@@ -27871,6 +29012,15 @@
           "description": "Analyze repository for automatic configuration detection",
           "parameters": [
             {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
               "name": "branch",
               "flag": "branch",
               "location": "query",
@@ -27932,6 +29082,24 @@
           "summary": "List Health Checks",
           "description": "List configured health checks.",
           "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Maximum number of results per page. Must be a multiple of 5."
+            },
             {
               "name": "zone_id",
               "flag": "zone-id",
@@ -28166,6 +29334,24 @@
           "summary": "List Health Checks",
           "description": "List configured health checks.",
           "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Maximum number of results per page. Must be a multiple of 5."
+            },
             {
               "name": "zone_id",
               "flag": "zone-id",
@@ -28490,6 +29676,15 @@
           "summary": "Generate a JWT to interact with the specified image registry.",
           "description": null,
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier."
+            },
             {
               "name": "domain",
               "flag": "domain",
@@ -37930,6 +39125,51 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "end_time",
+              "flag": "end-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The end time range for which you want to retrieve the meetings. The time must be specified in ISO format."
+            },
+            {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The search query string. You can search using the meeting ID or title."
+            },
+            {
+              "name": "start_time",
+              "flag": "start-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The start time range for which you want to retrieve the meetings. The time must be specified in ISO format."
             }
           ],
           "has_body": false
@@ -38120,6 +39360,24 @@
               "list": false,
               "schema_type": "string",
               "description": "ID of the meeting. Fetch the meeting ID using the create a meeting API."
+            },
+            {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
             }
           ],
           "has_body": false
@@ -40024,6 +41282,24 @@
               "description": null
             },
             {
+              "name": "page_size",
+              "flag": "page-size",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "The amount of items to return. Defaults to 10."
+            },
+            {
+              "name": "page_token",
+              "flag": "page-token",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "An opaque token returned from the last list response that when\nprovided will retrieve the next page.\n\nParameters used to filter the retrieved list must remain in subsequent\nrequests with a page token."
+            },
+            {
               "name": "status",
               "flag": "status",
               "location": "query",
@@ -40200,6 +41476,24 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "end_date",
+              "flag": "end-date",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "end date in YYYY-MM-DD format"
+            },
+            {
+              "name": "start_date",
+              "flag": "start-date",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "start date in YYYY-MM-DD format"
             }
           ],
           "has_body": false
@@ -40211,7 +41505,107 @@
           "path": "/organizations",
           "summary": "List organizations the user has access to",
           "description": "Retrieve a list of organizations a particular user has access to. (Currently in Closed Beta - see https://developers.cloudflare.com/fundamentals/organizations/)",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "containing.account",
+              "flag": "containing-account",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter the list of organizations to the ones that contain this particular\naccount."
+            },
+            {
+              "name": "containing.organization",
+              "flag": "containing-organization",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter the list of organizations to the ones that contain this particular\norganization."
+            },
+            {
+              "name": "containing.user",
+              "flag": "containing-user",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter the list of organizations to the ones that contain this particular\nuser.\n\nIMPORTANT: Just because an organization \"contains\" a user is not a\nrepresentation of any authorization or privilege to manage any resources\ntherein. An organization \"containing\" a user simply means the user is managed by\nthat organization."
+            },
+            {
+              "name": "id",
+              "flag": "id",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "array",
+              "description": "Only return organizations with the specified IDs (ex. id=foo&id=bar). Send multiple elements\nby repeating the query value."
+            },
+            {
+              "name": "name",
+              "flag": "name",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "(case-sensitive) Filter the list of organizations to where the name is equal to a\nparticular string."
+            },
+            {
+              "name": "name.contains",
+              "flag": "name-contains",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "(case-insensitive) Filter the list of organizations to where the name contains a particular\nstring."
+            },
+            {
+              "name": "name.endsWith",
+              "flag": "name-endswith",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "(case-insensitive) Filter the list of organizations to where the name ends with a particular\nstring."
+            },
+            {
+              "name": "name.startsWith",
+              "flag": "name-startswith",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "(case-insensitive) Filter the list of organizations to where the name starts with a\nparticular string."
+            },
+            {
+              "name": "page_size",
+              "flag": "page-size",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "The amount of items to return. Defaults to 10."
+            },
+            {
+              "name": "page_token",
+              "flag": "page-token",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "An opaque token returned from the last list response that when\nprovided will retrieve the next page.\n\nParameters used to filter the retrieved list must remain in subsequent\nrequests with a page token."
+            },
+            {
+              "name": "parent.id",
+              "flag": "parent-id",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter the list of organizations to the ones that are a sub-organization\nof the specified organization.\n\n\"null\" is a valid value to provide for this parameter. It means \"where\nan organization has no parent (i.e. it is a 'root' organization).\""
+            }
+          ],
           "has_body": false
         },
         {
@@ -40372,6 +41766,24 @@
               "list": false,
               "schema_type": null,
               "description": "The ID of the organization to retrieve a list of accounts for."
+            },
+            {
+              "name": "page_size",
+              "flag": "page-size",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "The amount of items to return. Defaults to 10."
+            },
+            {
+              "name": "page_token",
+              "flag": "page-token",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "An opaque token returned from the last list response that when\nprovided will retrieve the next page.\n\nParameters used to filter the retrieved list must remain in subsequent\nrequests with a page token."
             }
           ],
           "has_body": false
@@ -42474,6 +43886,105 @@
               "list": false,
               "schema_type": "string",
               "description": null
+            },
+            {
+              "name": "active_registrations",
+              "flag": "active-registrations",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Include or exclude devices with active registrations. The default is \"only\" - return only devices with active registrations."
+            },
+            {
+              "name": "cursor",
+              "flag": "cursor",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Opaque token indicating the starting position when requesting the next set of records. A cursor value can be obtained from the result_info.cursor field in the response."
+            },
+            {
+              "name": "id",
+              "flag": "id",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Filter by a one or more device IDs."
+            },
+            {
+              "name": "include",
+              "flag": "include",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Comma-separated list of additional information that should be included in the device response. Supported values are: \"last_seen_registration.policy\".\n"
+            },
+            {
+              "name": "last_seen_user.email",
+              "flag": "last-seen-user-email",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by the last seen user's email."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "The maximum number of devices to return in a single response."
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Search by device details."
+            },
+            {
+              "name": "seen_after",
+              "flag": "seen-after",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by the last_seen timestamp - returns only devices last seen after this timestamp."
+            },
+            {
+              "name": "seen_before",
+              "flag": "seen-before",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by the last_seen timestamp - returns only devices last seen before this timestamp."
+            },
+            {
+              "name": "sort_by",
+              "flag": "sort-by",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The device field to order results by."
+            },
+            {
+              "name": "sort_order",
+              "flag": "sort-order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Sort direction."
             }
           ],
           "has_body": false
@@ -42503,6 +44014,15 @@
               "list": false,
               "schema_type": "string",
               "description": null
+            },
+            {
+              "name": "include",
+              "flag": "include",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Comma-separated list of additional information that should be included in the device response. Supported values are: \"last_seen_registration.policy\".\n"
             }
           ],
           "has_body": false
@@ -42857,6 +44377,24 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
             }
           ],
           "has_body": false
@@ -75772,6 +77310,15 @@
               "description": null
             },
             {
+              "name": "end_time",
+              "flag": "end-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The end time range for which you want to retrieve the meetings. The time must be specified in ISO format."
+            },
+            {
               "name": "expired",
               "flag": "expired",
               "location": "query",
@@ -75788,6 +77335,69 @@
               "list": false,
               "schema_type": "string",
               "description": "ID of a meeting. Optional. Will limit results to only this meeting if passed."
+            },
+            {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The search query string. You can search using the meeting ID or title."
+            },
+            {
+              "name": "sort_by",
+              "flag": "sort-by",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "sort_order",
+              "flag": "sort-order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "start_time",
+              "flag": "start-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The start time range for which you want to retrieve the meetings. The time must be specified in ISO format."
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Filter by one or more recording status"
             }
           ],
           "has_body": false
@@ -76070,6 +77680,114 @@
               "list": false,
               "schema_type": "string",
               "description": null
+            },
+            {
+              "name": "cursor",
+              "flag": "cursor",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Opaque token indicating the starting position when requesting the next set of records. A cursor value can be obtained from the result_info.cursor field in the response."
+            },
+            {
+              "name": "device.id",
+              "flag": "device-id",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by WARP device ID."
+            },
+            {
+              "name": "id",
+              "flag": "id",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Filter by registration ID."
+            },
+            {
+              "name": "include",
+              "flag": "include",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Comma-separated list of additional information that should be included in the registration response. Supported values are: \"policy\".\n"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "The maximum number of devices to return in a single response."
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by registration details."
+            },
+            {
+              "name": "seen_after",
+              "flag": "seen-after",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by the last_seen timestamp - returns only registrations last seen after this timestamp."
+            },
+            {
+              "name": "seen_before",
+              "flag": "seen-before",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by the last_seen timestamp - returns only registrations last seen before this timestamp."
+            },
+            {
+              "name": "sort_by",
+              "flag": "sort-by",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The registration field to order results by."
+            },
+            {
+              "name": "sort_order",
+              "flag": "sort-order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Sort direction."
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Filter by registration status. Defaults to 'active'."
+            },
+            {
+              "name": "user.id",
+              "flag": "user-id",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Filter by user ID."
             }
           ],
           "has_body": false
@@ -76090,6 +77808,15 @@
               "list": false,
               "schema_type": "string",
               "description": null
+            },
+            {
+              "name": "include",
+              "flag": "include",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Comma-separated list of additional information that should be included in the registration response. Supported values are: \"policy\".\n"
             },
             {
               "name": "registration_id",
@@ -76203,7 +77930,17 @@
           "path": "/accounts/{account_id}/builds/repos/connections",
           "summary": "Create or update repository connection",
           "description": "Upsert a repository connection for CI/CD integration",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            }
+          ],
           "has_body": true
         },
         {
@@ -76213,7 +77950,26 @@
           "path": "/accounts/{account_id}/builds/repos/connections/{repo_connection_uuid}",
           "summary": "Delete repository connection",
           "description": "Remove a repository connection",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "repo_connection_uuid",
+              "flag": "repo-connection-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Repository connection UUID"
+            }
+          ],
           "has_body": false
         }
       ]
@@ -76737,6 +78493,96 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects."
+            },
+            {
+              "name": "include_recipient_counts",
+              "flag": "include-recipient-counts",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include recipient counts in the response."
+            },
+            {
+              "name": "include_resources",
+              "flag": "include-resources",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include resources in the response."
+            },
+            {
+              "name": "kind",
+              "flag": "kind",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by kind."
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order shares by values in the given field."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page."
+            },
+            {
+              "name": "resource_types",
+              "flag": "resource-types",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "array",
+              "description": "Filter share resources by resource_types."
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by status."
+            },
+            {
+              "name": "target_type",
+              "flag": "target-type",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by target_type."
             }
           ],
           "has_body": false
@@ -76777,6 +78623,24 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "include_recipient_counts",
+              "flag": "include-recipient-counts",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include recipient counts in the response."
+            },
+            {
+              "name": "include_resources",
+              "flag": "include-resources",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include resources in the response."
             },
             {
               "name": "share_id",
@@ -76866,6 +78730,33 @@
               "description": null
             },
             {
+              "name": "include_resources",
+              "flag": "include-resources",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include resources in the response."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page."
+            },
+            {
               "name": "share_id",
               "flag": "share-id",
               "location": "path",
@@ -76953,6 +78844,15 @@
               "description": null
             },
             {
+              "name": "include_resources",
+              "flag": "include-resources",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Include resources in the response."
+            },
+            {
               "name": "recipient_id",
               "flag": "recipient-id",
               "location": "path",
@@ -77029,6 +78929,33 @@
               "description": null
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page."
+            },
+            {
+              "name": "resource_type",
+              "flag": "resource-type",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter share resources by resource_type."
+            },
+            {
               "name": "share_id",
               "flag": "share-id",
               "location": "path",
@@ -77036,6 +78963,15 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter share resources by status."
             }
           ],
           "has_body": false
@@ -77192,6 +79128,33 @@
           "description": "Lists all organization shares.",
           "parameters": [
             {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects."
+            },
+            {
+              "name": "kind",
+              "flag": "kind",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by kind."
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order shares by values in the given field."
+            },
+            {
               "name": "organization_id",
               "flag": "organization-id",
               "location": "path",
@@ -77199,6 +79162,51 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page."
+            },
+            {
+              "name": "resource_types",
+              "flag": "resource-types",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "array",
+              "description": "Filter share resources by resource_types."
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by status."
+            },
+            {
+              "name": "target_type",
+              "flag": "target-type",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": null,
+              "description": "Filter shares by target_type."
             }
           ],
           "has_body": false
@@ -77653,6 +79661,33 @@
           "description": null,
           "parameters": [
             {
+              "name": "omit_source",
+              "flag": "omit-source",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Omit the source-files of schemas and only retrieve their meta-data."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
               "name": "validation_enabled",
               "flag": "validation-enabled",
               "location": "query",
@@ -77660,6 +79695,15 @@
               "list": false,
               "schema_type": "boolean",
               "description": "Filter for enabled schemas"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": false
@@ -77671,7 +79715,17 @@
           "path": "/zones/{zone_id}/schema_validation/schemas",
           "summary": "Upload a schema",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77681,7 +79735,35 @@
           "path": "/zones/{zone_id}/schema_validation/schemas/{schema_id}",
           "summary": "Get details of a schema",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "omit_source",
+              "flag": "omit-source",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "boolean",
+              "description": "Omit the source-files of schemas and only retrieve their meta-data."
+            },
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "The unique identifier of the schema"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -77691,7 +79773,26 @@
           "path": "/zones/{zone_id}/schema_validation/schemas/{schema_id}",
           "summary": "Edit details of a schema to enable validation",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "The unique identifier of the schema"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77701,7 +79802,26 @@
           "path": "/zones/{zone_id}/schema_validation/schemas/{schema_id}",
           "summary": "Delete a schema",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "The unique identifier of the schema"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -77713,6 +79833,42 @@
           "description": "Retrieves all operations from the schema. Operations that already exist in API Shield Endpoint Management will be returned as full operations.",
           "parameters": [
             {
+              "name": "endpoint",
+              "flag": "endpoint",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "feature",
+              "flag": "feature",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": "Add feature(s) to the results. The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning."
+            },
+            {
+              "name": "host",
+              "flag": "host",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "method",
+              "flag": "method",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "string",
+              "description": null
+            },
+            {
               "name": "operation_status",
               "flag": "operation-status",
               "location": "query",
@@ -77720,6 +79876,42 @@
               "list": false,
               "schema_type": "string",
               "description": "Filter results by whether operations exist in Web Asset Management or not. `new` will just return operations from the schema that do not exist otherwise. `existing` will just return operations from the schema that already exist."
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "schema_id",
+              "flag": "schema-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "The unique identifier of the schema"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": false
@@ -77731,7 +79923,35 @@
           "path": "/zones/{zone_id}/schema_validation/schemas/hosts",
           "summary": "List hosts covered by uploaded schemas",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         }
       ]
@@ -77747,7 +79967,17 @@
           "path": "/zones/{zone_id}/schema_validation/settings",
           "summary": "Get global schema validation settings",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -77757,7 +79987,17 @@
           "path": "/zones/{zone_id}/schema_validation/settings",
           "summary": "Update global schema validation settings",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77767,7 +80007,17 @@
           "path": "/zones/{zone_id}/schema_validation/settings",
           "summary": "Edit global schema validation settings",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77777,7 +80027,35 @@
           "path": "/zones/{zone_id}/schema_validation/settings/operations",
           "summary": "List per-operation schema validation settings",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -77787,7 +80065,17 @@
           "path": "/zones/{zone_id}/schema_validation/settings/operations",
           "summary": "Bulk edit per-operation schema validation settings",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77797,7 +80085,26 @@
           "path": "/zones/{zone_id}/schema_validation/settings/operations/{operation_id}",
           "summary": "Get per-operation schema validation setting",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -77807,7 +80114,26 @@
           "path": "/zones/{zone_id}/schema_validation/settings/operations/{operation_id}",
           "summary": "Update per-operation schema validation setting",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -77817,7 +80143,26 @@
           "path": "/zones/{zone_id}/schema_validation/settings/operations/{operation_id}",
           "summary": "Delete per-operation schema validation setting",
           "description": null,
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "operation_id",
+              "flag": "operation-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Identifier for the operation"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         }
       ]
@@ -78533,6 +80878,42 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects"
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order secrets by values in the given field"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page"
             }
           ],
           "has_body": false
@@ -78602,6 +80983,60 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects"
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order secrets by values in the given field"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page"
+            },
+            {
+              "name": "scopes",
+              "flag": "scopes",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "array",
+              "description": "Only secrets with the given scopes will be returned"
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Search secrets using a filter string, filtering across name and comment"
             },
             {
               "name": "store_id",
@@ -78832,7 +81267,53 @@
           "path": "/system/accounts/{account_tag}/stores",
           "summary": "List account stores (System)",
           "description": "Lists all stores in an account that are managed by the calling service.\nOnly returns stores where managed_by matches the authenticated service.\n",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects"
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order secrets by values in the given field"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page"
+            }
+          ],
           "has_body": false
         },
         {
@@ -78842,7 +81323,17 @@
           "path": "/system/accounts/{account_tag}/stores",
           "summary": "Create a store (System)",
           "description": "Creates a store in the account on behalf of the calling service.\nThe store will be marked as managed by the authenticated service.\nRequires account_id in the request body.\n",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            }
+          ],
           "has_body": true
         },
         {
@@ -78853,6 +81344,15 @@
           "summary": "Delete a store (System)",
           "description": "Deletes a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
             {
               "name": "store_id",
               "flag": "store-id",
@@ -78874,6 +81374,69 @@
           "description": "Lists all secrets in a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
             {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
+            {
+              "name": "direction",
+              "flag": "direction",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Direction to sort objects"
+            },
+            {
+              "name": "order",
+              "flag": "order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Order secrets by values in the given field"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of objects to return per page"
+            },
+            {
+              "name": "scopes",
+              "flag": "scopes",
+              "location": "query",
+              "required": false,
+              "list": true,
+              "schema_type": "array",
+              "description": "Only secrets with the given scopes will be returned"
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "Search secrets using a filter string, filtering across name and comment"
+            },
+            {
               "name": "store_id",
               "flag": "store-id",
               "location": "path",
@@ -78893,6 +81456,15 @@
           "summary": "Create secrets (System)",
           "description": "Creates one or more secrets in a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
             {
               "name": "store_id",
               "flag": "store-id",
@@ -78914,6 +81486,15 @@
           "description": "Deletes one or more secrets from a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
             {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
+            {
               "name": "store_id",
               "flag": "store-id",
               "location": "path",
@@ -78933,6 +81514,15 @@
           "summary": "Get a secret by ID (System)",
           "description": "Returns details of a single secret from a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
             {
               "name": "secret_id",
               "flag": "secret-id",
@@ -78963,6 +81553,15 @@
           "description": "Updates a single secret in a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
             {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
+            {
               "name": "secret_id",
               "flag": "secret-id",
               "location": "path",
@@ -78992,6 +81591,15 @@
           "description": "Deletes a single secret from a store managed by the calling service.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
             {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
+            {
               "name": "secret_id",
               "flag": "secret-id",
               "location": "path",
@@ -79020,6 +81628,15 @@
           "summary": "Duplicate secret (System)",
           "description": "Duplicates a secret in a store managed by the calling service, keeping the value.\nReturns 404 if the store doesn't exist or is not managed by the authenticated service.\n",
           "parameters": [
+            {
+              "name": "account_tag",
+              "flag": "account-tag",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Account tag identifier (e.g., '12a6ed19f349896cfbd6694ba3de8d31').\nThis is the account's external tag identifier, not the numeric account ID.\n"
+            },
             {
               "name": "secret_id",
               "flag": "secret-id",
@@ -80744,6 +83361,42 @@
               "description": "ID of the meeting that sessions should be associated with"
             },
             {
+              "name": "end_time",
+              "flag": "end-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The end time range for which you want to retrieve the meetings. The time must be specified in ISO format."
+            },
+            {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "participants",
+              "flag": "participants",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
+            },
+            {
               "name": "search",
               "flag": "search",
               "location": "query",
@@ -80751,6 +83404,42 @@
               "list": false,
               "schema_type": "string",
               "description": "Search string that matches sessions based on meeting title, meeting ID, and session ID"
+            },
+            {
+              "name": "sort_by",
+              "flag": "sort-by",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "sort_order",
+              "flag": "sort-order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "start_time",
+              "flag": "start-time",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The start time range for which you want to retrieve the meetings. The time must be specified in ISO format."
+            },
+            {
+              "name": "status",
+              "flag": "status",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
             }
           ],
           "has_body": false
@@ -80876,6 +83565,33 @@
               "description": "if true, response includes all the peer events of participants."
             },
             {
+              "name": "page_no",
+              "flag": "page-no",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "The page number from which you want your page search results to be displayed."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Number of results per page"
+            },
+            {
+              "name": "search",
+              "flag": "search",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": "The search query string. You can search using the meeting ID or title."
+            },
+            {
               "name": "session_id",
               "flag": "session-id",
               "location": "path",
@@ -80883,6 +83599,24 @@
               "list": false,
               "schema_type": "string",
               "description": "ID of the session"
+            },
+            {
+              "name": "sort_by",
+              "flag": "sort-by",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "sort_order",
+              "flag": "sort-order",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "string",
+              "description": null
             },
             {
               "name": "view",
@@ -84278,7 +87012,35 @@
           "path": "/zones/{zone_id}/token_validation/config",
           "summary": "List token validation configurations",
           "description": "Lists all token validation configurations for this zone",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -84288,7 +87050,17 @@
           "path": "/zones/{zone_id}/token_validation/config",
           "summary": "Create a new Token Validation configuration",
           "description": "Create a new Token Validation configuration",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84298,7 +87070,26 @@
           "path": "/zones/{zone_id}/token_validation/config/{config_id}",
           "summary": "Get a single Token Configuration",
           "description": "Get a single Token Configuration",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "config_id",
+              "flag": "config-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Configuration ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -84308,7 +87099,26 @@
           "path": "/zones/{zone_id}/token_validation/config/{config_id}",
           "summary": "Edit an existing Token Configuration",
           "description": "Edit fields of an existing Token Configuration",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "config_id",
+              "flag": "config-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Configuration ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84318,7 +87128,26 @@
           "path": "/zones/{zone_id}/token_validation/config/{config_id}",
           "summary": "Delete Token Configuration",
           "description": "Delete Token Configuration",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "config_id",
+              "flag": "config-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Configuration ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -84328,7 +87157,26 @@
           "path": "/zones/{zone_id}/token_validation/config/{config_id}/credentials",
           "summary": "Update Token Configuration credentials",
           "description": "Update Token Configuration credentials",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "config_id",
+              "flag": "config-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Configuration ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         }
       ]
@@ -84391,6 +87239,24 @@
               "description": "Select rules with these IDs."
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
               "name": "rule_id",
               "flag": "rule-id",
               "location": "query",
@@ -84407,6 +87273,15 @@
               "list": true,
               "schema_type": "array",
               "description": "Select rules using any of these token configurations."
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
             }
           ],
           "has_body": false
@@ -84418,7 +87293,17 @@
           "path": "/zones/{zone_id}/token_validation/rules",
           "summary": "Create a token validation rule",
           "description": "Create a token validation rule.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84428,7 +87313,26 @@
           "path": "/zones/{zone_id}/token_validation/rules/{rule_id}",
           "summary": "Get a zone token validation rule",
           "description": "Get a zone token validation rule.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "rule_id",
+              "flag": "rule-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Validation Rule ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -84438,7 +87342,26 @@
           "path": "/zones/{zone_id}/token_validation/rules/{rule_id}",
           "summary": "Edit a zone token validation rule",
           "description": "Edit a zone token validation rule.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "rule_id",
+              "flag": "rule-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Validation Rule ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84448,7 +87371,26 @@
           "path": "/zones/{zone_id}/token_validation/rules/{rule_id}",
           "summary": "Delete a zone token validation rule",
           "description": "Delete a zone token validation rule.",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "rule_id",
+              "flag": "rule-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": "Token Validation Rule ID"
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": false
         },
         {
@@ -84458,7 +87400,17 @@
           "path": "/zones/{zone_id}/token_validation/rules/bulk",
           "summary": "Bulk create token validation rules",
           "description": "Create zone token validation rules.\n\nA request can create multiple Token Validation Rules.\n",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84468,7 +87420,17 @@
           "path": "/zones/{zone_id}/token_validation/rules/bulk",
           "summary": "Bulk edit token validation rules",
           "description": "Edit token validation rules.\n\nA request can update multiple Token Validation Rules.\n\nRules can be re-ordered using the `position` field.\n\nReturns all updated rules.\n",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
+              "description": null
+            }
+          ],
           "has_body": true
         },
         {
@@ -84516,12 +87478,39 @@
               "description": "Filter operations by method."
             },
             {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Maximum number of results per page."
+            },
+            {
               "name": "state",
               "flag": "state",
               "location": "query",
               "required": false,
               "list": true,
               "schema_type": "array",
+              "description": null
+            },
+            {
+              "name": "zone_id",
+              "flag": "zone-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": null,
               "description": null
             }
           ],
@@ -84586,7 +87575,17 @@
           "path": "/accounts/{account_id}/builds/triggers",
           "summary": "Create trigger",
           "description": "Create a new CI/CD trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            }
+          ],
           "has_body": true
         },
         {
@@ -84596,7 +87595,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}",
           "summary": "Update trigger",
           "description": "Update an existing CI/CD trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": true
         },
         {
@@ -84606,7 +87624,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}",
           "summary": "Delete trigger",
           "description": "Remove a CI/CD trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": false
         },
         {
@@ -84616,7 +87653,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}/builds",
           "summary": "Create manual build",
           "description": "Trigger a manual build for a specific trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": true
         },
         {
@@ -84626,7 +87682,26 @@
           "path": "/accounts/{account_id}/builds/triggers/{trigger_uuid}/purge_build_cache",
           "summary": "Purge build cache",
           "description": "Clear the build cache for a specific trigger",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
+              "name": "trigger_uuid",
+              "flag": "trigger-uuid",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Trigger UUID"
+            }
+          ],
           "has_body": false
         }
       ]
@@ -88854,6 +91929,24 @@
               "list": false,
               "schema_type": null,
               "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Maximum number of results per page. Must be a multiple of 5."
             }
           ],
           "has_body": false
@@ -88866,6 +91959,24 @@
           "summary": "List waiting rooms for zone",
           "description": "Lists waiting rooms for zone.",
           "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Maximum number of results per page. Must be a multiple of 5."
+            },
             {
               "name": "zone_id",
               "flag": "zone-id",
@@ -89022,6 +92133,24 @@
           "summary": "List events",
           "description": "Lists events for a waiting room.",
           "parameters": [
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Page number of paginated results."
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "number",
+              "description": "Maximum number of results per page. Must be a multiple of 5."
+            },
             {
               "name": "waiting_room_id",
               "flag": "waiting-room-id",
@@ -92451,6 +95580,15 @@
           "description": "Get all builds for a specific worker script with pagination",
           "parameters": [
             {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
+            {
               "name": "external_script_id",
               "flag": "external-script-id",
               "location": "path",
@@ -92458,6 +95596,24 @@
               "list": false,
               "schema_type": "string",
               "description": "External script identifier"
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Page number for pagination"
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": "Number of items per page"
             }
           ],
           "has_body": false
@@ -92470,6 +95626,15 @@
           "summary": "List triggers by script",
           "description": "Get all triggers for a specific worker script",
           "parameters": [
+            {
+              "name": "account_id",
+              "flag": "account-id",
+              "location": "path",
+              "required": true,
+              "list": false,
+              "schema_type": "string",
+              "description": "Account identifier"
+            },
             {
               "name": "external_script_id",
               "flag": "external-script-id",
@@ -102070,6 +105235,24 @@
               "required": false,
               "list": false,
               "schema_type": "string",
+              "description": null
+            },
+            {
+              "name": "page",
+              "flag": "page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
+              "description": null
+            },
+            {
+              "name": "per_page",
+              "flag": "per-page",
+              "location": "query",
+              "required": false,
+              "list": false,
+              "schema_type": "integer",
               "description": null
             },
             {

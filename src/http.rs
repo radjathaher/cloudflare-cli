@@ -1,6 +1,6 @@
 use anyhow::{Context, Result};
-use reqwest::blocking::Client;
 use reqwest::Method;
+use reqwest::blocking::Client;
 use serde_json::Value;
 
 pub struct HttpClient {
@@ -59,7 +59,7 @@ impl HttpClient {
         let resp = req.send().context("send request")?;
         let status = resp.status();
         let text = resp.text().context("read response body")?;
-        let body = serde_json::from_str(&text).unwrap_or_else(|_| Value::String(text));
+        let body = serde_json::from_str(&text).unwrap_or(Value::String(text));
 
         Ok(ResponseData {
             status: status.as_u16(),

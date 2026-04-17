@@ -1,6 +1,8 @@
 use anyhow::{Context, Result, anyhow};
 use clap::{Arg, ArgAction, Command};
-use cloudflare_cli::command_tree::{CommandTree, Operation, ParamDef};
+use cloudflare_cli::command_tree::{
+    CommandTree, Operation, ParamDef, Resource, extract_path_param_names,
+};
 use cloudflare_cli::http::HttpClient;
 use serde_json::{Value, json};
 use std::{env, fs, io::Write};
@@ -47,7 +49,7 @@ fn run() -> Result<()> {
     let op = find_op(&tree, res_name, op_name)
         .ok_or_else(|| anyhow!("unknown command {res_name} {op_name}"))?;
 
-    let (path, query, body, extra_headers) = build_request(&op, op_matches)?;
+    let (path, query, body, extra_headers) = build_request(op, op_matches)?;
     let mut headers = headers;
     headers.extend(extra_headers);
 
@@ -96,6 +98,12 @@ fn build_cli(tree: &CommandTree) -> Command {
     cmd = cmd.subcommand(
         Command::new("list")
             .about("List resources and operations")
+            .arg(
+                Arg::new("query")
+                    .value_name("QUERY")
+                    .num_args(0..)
+                    .help("Filter by resource, operation, method, path, or summary"),
+            )
             .arg(
                 Arg::new("json")
                     .long("json")
@@ -196,7 +204,12 @@ fn build_param_arg(param: &ParamDef) -> Arg {
     let mut arg = Arg::new(param.flag.clone())
         .long(param.flag.clone())
         .value_name(param.name.clone())
-        .help(param.description.clone().unwrap_or_else(|| param.location.clone()));
+        .help(
+            param
+                .description
+                .clone()
+                .unwrap_or_else(|| param.location.clone()),
+        );
 
     if param.list {
         arg = arg.action(ArgAction::Append);
@@ -206,20 +219,44 @@ fn build_param_arg(param: &ParamDef) -> Arg {
 }
 
 fn handle_list(tree: &CommandTree, matches: &clap::ArgMatches) -> Result<()> {
+    let terms: Vec<String> = matches
+        .get_many::<String>("query")
+        .map(|values| values.map(|value| value.to_ascii_lowercase()).collect())
+        .unwrap_or_default();
+    let resources = filter_resources(tree, &terms);
+
     if matches.get_flag("json") {
         let mut out = Vec::new();
-        for res in &tree.resources {
-            let ops: Vec<String> = res.ops.iter().map(|op| op.name.clone()).collect();
-            out.push(json!({"resource": res.name, "display": res.display_name, "ops": ops}));
+        for item in resources {
+            let ops: Vec<Value> = item
+                .ops
+                .iter()
+                .map(|op| {
+                    json!({
+                        "name": op.name,
+                        "display": op.display_name,
+                        "method": op.method,
+                        "path": op.path,
+                        "summary": op.summary,
+                    })
+                })
+                .collect();
+            out.push(json!({"resource": item.resource.name, "display": item.resource.display_name, "ops": ops}));
         }
         write_stdout_line(&serde_json::to_string_pretty(&out)?)?;
         return Ok(());
     }
 
-    for res in &tree.resources {
-        write_stdout_line(&format!("{} ({})", res.name, res.display_name))?;
-        for op in &res.ops {
-            write_stdout_line(&format!("  {} ({})", op.name, op.display_name))?;
+    for item in resources {
+        write_stdout_line(&format!(
+            "{} ({})",
+            item.resource.name, item.resource.display_name
+        ))?;
+        for op in item.ops {
+            write_stdout_line(&format!(
+                "  {} ({}) - {} {}",
+                op.name, op.display_name, op.method, op.path
+            ))?;
         }
     }
     Ok(())
@@ -292,7 +329,10 @@ fn handle_api(tree: &CommandTree, matches: &clap::ArgMatches) -> Result<()> {
         .ok_or_else(|| anyhow!("path required"))?;
 
     let query = parse_key_values(matches.get_many::<String>("query"))?;
-    let body = load_body(matches.get_one::<String>("body"), matches.get_one::<String>("body-file"))?;
+    let body = load_body(
+        matches.get_one::<String>("body"),
+        matches.get_one::<String>("body-file"),
+    )?;
 
     let client = HttpClient::new(endpoint, token)?;
     let response = client.execute(method.parse()?, path, &query, &headers, body)?;
@@ -307,7 +347,14 @@ fn handle_api(tree: &CommandTree, matches: &clap::ArgMatches) -> Result<()> {
     Ok(())
 }
 
-fn build_request(op: &Operation, matches: &clap::ArgMatches) -> Result<(String, Vec<(String, String)>, Option<Value>, Vec<(String, String)>)> {
+type RequestParts = (
+    String,
+    Vec<(String, String)>,
+    Option<Value>,
+    Vec<(String, String)>,
+);
+
+fn build_request(op: &Operation, matches: &clap::ArgMatches) -> Result<RequestParts> {
     let mut path = op.path.clone();
     let mut query = Vec::new();
     let mut headers = Vec::new();
@@ -341,7 +388,20 @@ fn build_request(op: &Operation, matches: &clap::ArgMatches) -> Result<(String, 
         }
     }
 
-    let body = load_body(matches.get_one::<String>("body"), matches.get_one::<String>("body-file"))?;
+    for name in extract_path_param_names(&path) {
+        let value =
+            default_env_for_param(&name).ok_or_else(|| anyhow!("missing path param {name}"))?;
+        path = path.replace(&format!("{{{name}}}"), &urlencoding::encode(&value));
+    }
+
+    let body = if op.has_body {
+        load_body(
+            matches.get_one::<String>("body"),
+            matches.get_one::<String>("body-file"),
+        )?
+    } else {
+        None
+    };
     Ok((path, query, body, headers))
 }
 
@@ -382,7 +442,11 @@ fn default_env_for_param(name: &str) -> Option<String> {
 
 fn split_list(value: &str) -> Vec<String> {
     if value.contains(',') {
-        value.split(',').map(|v| v.trim().to_string()).filter(|v| !v.is_empty()).collect()
+        value
+            .split(',')
+            .map(|v| v.trim().to_string())
+            .filter(|v| !v.is_empty())
+            .collect()
     } else {
         vec![value.to_string()]
     }
@@ -413,7 +477,9 @@ fn parse_headers(values: Option<clap::parser::ValuesRef<String>>) -> Vec<(String
     headers
 }
 
-fn parse_key_values(values: Option<clap::parser::ValuesRef<String>>) -> Result<Vec<(String, String)>> {
+fn parse_key_values(
+    values: Option<clap::parser::ValuesRef<String>>,
+) -> Result<Vec<(String, String)>> {
     let mut out = Vec::new();
     if let Some(values) = values {
         for value in values {
@@ -466,4 +532,115 @@ fn write_stdout_line(line: &str) -> Result<()> {
     stdout.write_all(line.as_bytes())?;
     stdout.write_all(b"\n")?;
     Ok(())
+}
+
+struct ListResource<'a> {
+    resource: &'a Resource,
+    ops: Vec<&'a Operation>,
+}
+
+fn filter_resources<'a>(tree: &'a CommandTree, terms: &[String]) -> Vec<ListResource<'a>> {
+    tree.resources
+        .iter()
+        .filter_map(|resource| {
+            let resource_matches = matches_terms(
+                terms,
+                &[resource.name.as_str(), resource.display_name.as_str()],
+            );
+            let ops: Vec<&Operation> = if resource_matches {
+                resource.ops.iter().collect()
+            } else {
+                resource
+                    .ops
+                    .iter()
+                    .filter(|op| operation_matches_terms(op, terms))
+                    .collect()
+            };
+
+            if ops.is_empty() {
+                None
+            } else {
+                Some(ListResource { resource, ops })
+            }
+        })
+        .collect()
+}
+
+fn operation_matches_terms(op: &Operation, terms: &[String]) -> bool {
+    let haystacks = [
+        op.name.as_str(),
+        op.display_name.as_str(),
+        op.method.as_str(),
+        op.path.as_str(),
+        op.summary.as_deref().unwrap_or_default(),
+        op.description.as_deref().unwrap_or_default(),
+    ];
+    matches_terms(terms, &haystacks)
+}
+
+fn matches_terms(terms: &[String], haystacks: &[&str]) -> bool {
+    terms.iter().all(|term| {
+        haystacks
+            .iter()
+            .any(|value| value.to_ascii_lowercase().contains(term))
+    })
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{filter_resources, operation_matches_terms};
+    use cloudflare_cli::command_tree::{CommandTree, Operation, Resource};
+
+    fn op(name: &str, method: &str, path: &str) -> Operation {
+        Operation {
+            name: name.to_string(),
+            display_name: name.to_string(),
+            method: method.to_string(),
+            path: path.to_string(),
+            summary: None,
+            description: None,
+            parameters: Vec::new(),
+            has_body: false,
+        }
+    }
+
+    #[test]
+    fn list_filter_matches_operation_paths() {
+        let operation = op(
+            "getlatestbuildsbyscripts",
+            "GET",
+            "/accounts/{account_id}/builds/builds/latest",
+        );
+
+        assert!(operation_matches_terms(
+            &operation,
+            &["builds".to_string(), "latest".to_string()]
+        ));
+    }
+
+    #[test]
+    fn list_filter_keeps_matching_operations_only() {
+        let tree = CommandTree {
+            version: 4,
+            endpoint: "https://api.example.test".to_string(),
+            resources: vec![Resource {
+                name: "builds".to_string(),
+                display_name: "Builds".to_string(),
+                ops: vec![
+                    op(
+                        "getlatestbuildsbyscripts",
+                        "GET",
+                        "/accounts/{account_id}/builds/latest",
+                    ),
+                    op("cancelbuild", "PUT", "/accounts/{account_id}/builds/cancel"),
+                ],
+            }],
+        };
+
+        let filtered = filter_resources(&tree, &["latest".to_string()]);
+
+        assert_eq!(filtered.len(), 1);
+        assert_eq!(filtered[0].ops.len(), 1);
+        assert_eq!(filtered[0].ops[0].name, "getlatestbuildsbyscripts");
+    }
 }
